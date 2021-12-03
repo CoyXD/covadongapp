@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.covadongapp.ui.home.HomeFragment"
+        android:label="Menu principal"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/perfiledit"
+        android:name="com.example.covadongapp.ui.gallery.GalleryFragment"
+        android:label="Editar perfil"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/calendario"
+        android:name="com.example.covadongapp.ui.slideshow.SlideshowFragment"
+        android:label="Calendario de citas"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/contacto"
+        android:name="com.example.covadongapp.ui.contacto.ContactoFragment"
+        android:label="Contactos"
+        tools:layout="@layout/fragment_contacto" />
+
+    <fragment
+        android:id="@+id/info"
+        android:name="com.example.covadongapp.ui.info.InfoFragment"
+        android:label="informacion"
+        tools:layout="@layout/fragment_info" />
+</navigation>

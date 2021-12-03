@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_prin2"
+    tools:context=".OPanalisis">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/analicis" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="179dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:shadowColor="#000000"
+        android:text="Análisis Médico"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/bordes_redondos_3"
+        android:onClick="sacar"
+        android:text="Sacar cita"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bordes_redondos_4"
+        android:onClick="revisar"
+        android:text="Revisar resultados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bordes_redondos_2"
+        android:onClick="cancelar"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

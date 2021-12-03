@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".escaner">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_thambi"
+        android:gravity="center"
+        android:text="Escanea el QR en camara"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_visor"
+        android:layout_width="match_parent"
+        android:layout_height="528dp"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bordes_redondos_3"
+        android:gravity="center"
+        android:text="@string/btnCamara" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bordes_redondos_2"
+        android:onClick="cancelar"
+        android:text="Regresar" />
+</LinearLayout>

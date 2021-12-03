@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.covadongapp">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="COVADONGA"
+        android:roundIcon="@drawable/logolaunch"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Covadongapp">
+        <activity
+            android:name=".emergenciaRoja"
+            android:exported="false" />
+        <activity
+            android:name=".emergenciaNaranja"
+            android:exported="false" />
+        <activity
+            android:name=".emergenciaAmarillo"
+            android:exported="false" />
+        <activity
+            android:name=".emergnciaVerde"
+            android:exported="false" />
+        <activity
+            android:name=".emergenciap2"
+            android:exported="false" />
+        <activity
+            android:name=".escaner"
+            android:exported="false" />
+        <activity
+            android:name=".OPemergencia"
+            android:exported="false" />
+        <activity
+            android:name=".OPqr"
+            android:exported="false" />
+        <activity
+            android:name=".OPvideoc"
+            android:exported="false" />
+        <activity
+            android:name=".OPdocs"
+            android:exported="false" />
+        <activity
+            android:name=".OPcita"
+            android:exported="false" />
+        <activity
+            android:name=".OPanalisis"
+            android:exported="false" />
+        <activity
+            android:name=".Home1"
+            android:exported="false"
+            android:label="@string/title_activity_home1"
+            android:theme="@style/Theme.Covadongapp.NoActionBar" />
+        <activity
+            android:name=".CargandoUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
